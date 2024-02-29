@@ -10,7 +10,7 @@ import { CardComponent } from './shared/card/card.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 //Material imports
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { MatButtonModule, MatIconButton } from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
 import { ContainerComponent } from './shared/container/container.component';
 import { HomeComponent } from './pages/home/home.component';
 import { CardBuscaComponent } from './shared/card-busca/card-busca.component';
@@ -24,6 +24,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
+import { ModalComponent } from './shared/modal/modal.component';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     CardBuscaComponent,
     CardDepoimentoComponent,
     FormBuscaComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
@@ -52,6 +55,7 @@ import { MatNativeDateModule } from '@angular/material/core';
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
